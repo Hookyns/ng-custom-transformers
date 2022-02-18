@@ -2,7 +2,7 @@ import { AngularWebpackPlugin } from "@ngtools/webpack";
 import type * as ts             from "typescript";
 
 export default function modifyConfig(cfg: any) {
-	const angularWebpackPlugin = cfg.plugins.find((plugin: unknown) => plugin instanceof AngularWebpackPlugin);
+	const angularWebpackPlugin = cfg.plugins.find((plugin: unknown) => plugin?.constructor?.name === "AngularWebpackPlugin");
 
 	if (!angularWebpackPlugin)
 	{
