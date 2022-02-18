@@ -1,6 +1,6 @@
 {
     "name": "ng-custom-transformers",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Package adding support for custom TypeScript transformers configured in tsconfig.json with ttypescript format.",
     "main": "index.js",
     "types": "index.d.ts",
